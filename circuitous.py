@@ -7,7 +7,7 @@ YAGNI - Ya ain't gonna need it
 
 Agile : Waterfall :: Lean Startup : Business Plan
 '''
-
+import math
 
 class Circle:
     '''
@@ -20,10 +20,10 @@ class Circle:
         return ('Circle(radius=%r)' % self.radius)
 
     def area(self):
-        return 3.14159254 * self.radius ** 2
+        return math.pi * self.radius ** 2
 
     def perimeter(self):
-        return 3.1415 * self.radius * 2
+        return math.pi * self.radius * 2
 
 if __name__ == "__main__":
     c = Circle(5)
