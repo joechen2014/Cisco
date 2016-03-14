@@ -8,11 +8,16 @@ YAGNI - Ya ain't gonna need it
 Agile : Waterfall :: Lean Startup : Business Plan
 '''
 import math
+from collections import namedtuple
+
+Version = namedtuple('Version', 'major minor')
 
 class Circle:
     '''
     An advanced circle analytics toolkit
     '''
+
+    version = Version(0, 4)
 
     def __init__(self, radius):
         self.radius = radius
@@ -27,3 +32,5 @@ class Circle:
 
 if __name__ == "__main__":
     c = Circle(5)
+    print c
+    
