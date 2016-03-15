@@ -21,8 +21,9 @@ class Circle:
 
     def __init__(self, radius):
         self.radius = radius
+        
     def __repr__(self):
-        return ('Circle(radius=%r)' % self.radius)
+        return ('%s(radius=%r)' % (self.__class__.__name__, self.radius))
 
     def area(self):
         return math.pi * self.radius ** 2
